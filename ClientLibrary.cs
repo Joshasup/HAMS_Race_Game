@@ -77,10 +77,10 @@ namespace nettest2
             return UInt32.Parse(searchJSON("matchID", jsonString));
         }
         
-        public static UInt32 joinMatch(String username, UInt32 matchID)
+        public static UInt32 joinMatch(String username)
         {
             HttpClient test = new HttpClient();
-            string temp = "{\n\"username\": \""  + username + "\", \n\"matchID\": " + matchID + " \n}";
+            string temp = "{\n\"username\": \""  + username + "\" \n}";
             var content = new StringContent(temp, Encoding.UTF8, "application/json");
             var result = test.PostAsync("http://45.33.33.245:8000/match/join", content).Result;
             var jsonString = result.Content.ReadAsStringAsync().Result;
