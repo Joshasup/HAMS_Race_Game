@@ -1,5 +1,4 @@
-namespace nettest2
-{
+
     public class RegResult
     {
         private bool success = false;
@@ -11,4 +10,3 @@ namespace nettest2
 
         public bool Success => success;
     }
-}

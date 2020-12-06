@@ -1,7 +1,6 @@
 using System;
 
-namespace nettest2
-{
+
     public class Match
     {
         private UInt32 matchID;
@@ -18,4 +17,3 @@ namespace nettest2
 
         public bool IsStarted => isStarted;
     }
-}

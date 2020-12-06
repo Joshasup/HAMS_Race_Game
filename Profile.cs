@@ -1,7 +1,5 @@
 using System;
 
-namespace nettest2
-{
     public class Profile
     {
         private string username = "";
@@ -33,4 +31,3 @@ namespace nettest2
             set => losses = value;
         }
     }
-}

@@ -3,9 +3,8 @@ using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace nettest2
-{
-    internal class ClientLibrary
+
+    public class ClientLibrary
     {
         
 
@@ -137,4 +136,3 @@ namespace nettest2
         
     }
     
-}
